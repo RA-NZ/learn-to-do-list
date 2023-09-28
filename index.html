@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- buat direct ke style.css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Base -->
+    <div class="Base Title">
+      <hi class="">THINGS TO DO</hi>
+
+      <!-- Add New field -->
+      <div class="Search">
+        <input
+          type="text"
+          id="Add"
+          name="Add"
+          value="Add New" size="70"
+          onfocus="clearInputValue(this)"
+          onblur="restoreInputValue(this)"
+        />
+      </div>
+      <!-- lists -->
+      <div class="ListsBase">
+      <form class="Lists">
+        <input type="checkbox" />
+        <label> Learn Javascript</label><br />
+        <hr size 10%>
+        <input type="checkbox"  />
+        <label> Learn React</label><br />
+        <hr size 10%>
+        <input type="checkbox" />
+        <label> Build a React App</label><br />
+        <hr size 10%>
+        <input type="checkbox"  />
+        <label> Learn Next JS</label><br />
+        <hr size 10%>
+        <input type="checkbox" />
+        <label > Learn Flutter</label><br />
+        <hr size 10%>
+        <input type="checkbox" />
+        <label> Learn React Native</label>
+      </form>
+      </div>
+      <!-- Footer -->
+    </div>
+    <script>
+      function clearInputValue(input) {
+        input.value = "";
+      }
+
+      function restoreInputValue(input) {
+        if (input.value === "") {
+          input.value = "Add New";
+        }
+      }
+      
+      
+
+    </script>
+  </body>
+</html>
